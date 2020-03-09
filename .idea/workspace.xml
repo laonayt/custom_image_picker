@@ -22,6 +22,8 @@
     <findStrings>
       <find>takeVideoWithCamera</find>
       <find>METHOD_CALL_VIDEO</find>
+      <find>call</find>
+      <find>_arguments</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
