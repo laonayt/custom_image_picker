@@ -3,8 +3,6 @@
 // found in the LICENSE file.
 
 #import <Flutter/Flutter.h>
-#import <UIKit/UIKit.h>
 
-@interface AppDelegate : FlutterAppDelegate
-
+@interface FLTImagePickerPlugin : NSObject <FlutterPlugin>
 @end

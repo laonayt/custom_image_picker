@@ -1,4 +1,4 @@
-// Copyright 2019 The Flutter Authors. All rights reserved.
+// Copyright 2019 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
@@ -7,14 +7,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GIFInfo : NSObject
-
-@property(strong, nonatomic, readonly) NSArray<UIImage *> *images;
-@property(assign, nonatomic, readonly) NSTimeInterval interval;
-
-- (instancetype)initWithImages:(NSArray<UIImage *> *)images interval:(NSTimeInterval)interval;
-
-@end
+typedef struct GIFInfo {
+  // frames of animation
+  NSArray<UIImage *> *images;
+  NSTimeInterval interval;
+} GIFInfo;
 
 @interface FLTImagePickerImageUtil : NSObject
 
@@ -23,9 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
                maxHeight:(NSNumber *)maxHeight;
 
 // Resize all gif animation frames.
-+ (GIFInfo *)scaledGIFImage:(NSData *)data
-                   maxWidth:(NSNumber *)maxWidth
-                  maxHeight:(NSNumber *)maxHeight;
++ (GIFInfo)scaledGIFImage:(NSData *)data
+                 maxWidth:(NSNumber *)maxWidth
+                maxHeight:(NSNumber *)maxHeight;
 
 @end
 

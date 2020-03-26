@@ -1,12 +1,6 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
-    <CLASSES>
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/video_player_web-0.1.2" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/e2e-0.2.4+1" />
-      <root url="file://$PROJECT_DIR$" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/video_player-0.10.7" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/flutter_plugin_android_lifecycle-1.0.5" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
